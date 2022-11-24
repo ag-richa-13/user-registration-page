@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Richa's Coffee Shop | Sign Up</title>
+    <link rel="shortcut icon" href="./image/richa's coffee.ico">
+
+    <!-- <script src="./javascript/validation.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="signup">
+
+            <form action="/register" method="POST" name="form">
+
+                <h3 class="h3">Sign Up</h3>
+
+                <!-- Name -->
+                <input type="text" name="name" id="name" class="data" placeholder="Name" required>
+
+                <!-- Email -->
+                <input type="email" class="email data" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required>
+
+                <!-- Password -->
+                <input type="password" class="password data" id="password" name="password" pattern="[A-Za-z0-9._%@-*]" value="" placeholder="Password" required>
+
+                <!-- Confirm Password -->
+                <input type="password" class="cpassword data" id="cpassword" name="cpassword" pattern="[A-Za-z0-9._%@-*]" value="" placeholder="Confirm Password" required>
+
+                <!-- Gender -->
+                <select name="gender" value="gender" class='gender' required>
+                    <option value='' disabled="disabled" selected="selected">Gender</option> 
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- submit -->
+                <input type="submit" value="Sign Up " id='signup'>
+
+            </form>
+
+            <div class="signin">
+
+                <!-- Log In -->
+                <input type="button" value="Sign In" onclick="window.open('/login')" class="btn">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

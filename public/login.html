@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Richa's Coffee Shop | Sign In</title>
+    <link rel="shortcut icon" href="./image/richa's coffee.ico ">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login">
+
+            <form action="/login" method="POST" class="form-horizontal">
+
+                <h3 class="h3">Sign In</h3>
+
+                <!-- Email -->
+                <input type="email" id="email" name="email" placeholder="Email" class="email data" required>
+
+                <!-- password -->
+                <input type="password" class="password data" id="password" name="password" placeholder="Password" required>
+
+                <!-- submit -->
+                <input type="submit" value="Sign In" class='signin'>
+
+            </form>
+
+            <div class="signup">
+                <!-- Register -->
+                <input type="button" value="Sign Up" onclick="window.open('/register')" class="btn">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
