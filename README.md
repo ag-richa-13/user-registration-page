@@ -1,2 +1,2 @@
-# signin-signup-page
-This is my SignIn SignUp page repository.
+# user-registration-page
+This is my User Registration Page repository.
